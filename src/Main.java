@@ -15,9 +15,11 @@ public class Main {
         }
 
         System.out.println("Задача 3");
-        int year = 2020;
-        if (year > 1584 && (year % 4 == 0 || (year % 400 == 0 && year % 100 == 0))){
+        int year = 2021;
+        if (year%4==0 || year%4 == 0 && year%100 !=0 || year%100==0 && year%400 ==0){
             System.out.println("Год является високосным");
+        } else if (year < 1584){
+            System.out.println( "Високосный год ввели только в 1584 году.");
         } else {
             System.out.println("Год не является високосным");
         }
